@@ -1,4 +1,4 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar " role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="http://localhost/mi_proyecto/index.php?vista=home">
       <img src="./img/LOGO1.png" width="70" height="40">

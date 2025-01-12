@@ -1,6 +1,11 @@
 body,html{
     height: 100%;
     width: 100%;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;/* Fija la imagen al hacer scroll */
 }
 
 .main-container{
@@ -63,4 +68,10 @@ body,html{
     width: 100%; /* Hace que el botón ocupe toda la fila */
     font-size: 1.2rem; /* Ajusta el tamaño del texto */
     padding: 1rem; /* Espaciado interno del botón */
+}
+
+
+.custom-brown {
+    background-color: #8B4513  !important; /* Color café */
+    color: #ffffff; /* Texto blanco para contraste */
 }

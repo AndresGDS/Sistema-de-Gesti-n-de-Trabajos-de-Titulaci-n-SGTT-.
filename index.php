@@ -46,11 +46,24 @@
                     include "./inc/script.php";
                    
                 }
-                elseif($_GET['vista']=="Todo"){
-                    include "./inc/navbar2.php"; 
+                elseif ($_GET['vista'] == "Todo") {
+                    // Verificar si el usuario ha iniciado sesión
+                    if (isset($_SESSION['id']) && !empty($_SESSION['id']) && 
+                        isset($_SESSION['nombre']) && !empty($_SESSION['nombre'])) {
+                        
+                        // Si ha iniciado sesión, mostrar navbar2
+                        include "./inc/navbar2.php";
+                        
+                    } else {
+                        // Si NO ha iniciado sesión, mostrar navbar normal
+                        include "./inc/navbar.php";
+                    }
+                
+                    // Incluir la vista y los scripts
                     include "./vistas/Todo.php";
                     include "./inc/script.php";
-                } 
+                }
+                
                 elseif($_GET['vista']=="Buscador_Nombre_E"){
                     include "./inc/navbar2.php"; 
                     include "./vistas/Buscador_Nombre_E.php";
